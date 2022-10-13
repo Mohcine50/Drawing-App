@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;600&display=swap");
+div,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  display: flex;
+  color: #fff;
+  font-family: "Gemunu Libre", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100vh;
+  position: relative;
+  flex: 0.2;
+}
+.sidebar::after {
+  display: block;
+  width: 1px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+}
+.sidebar .logo {
+  margin: 10px auto;
+}
+.sidebar .logo h1 {
+  width: fit-content;
+  margin: 0 auto;
+}
+.sidebar .logo h1 span {
+  color: #3e90ff;
+}
+
+.sidebar .shapes {
+  margin: 20px auto;
+}
+
+.sidebar .shapes h2 {
+  width: fit-content;
+  margin: 0 10px;
+}
+.sidebar .shapes .shape {
+  margin: 10px;
+}
+
+.sidebar .shapes .shape span {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.sidebar .shapes .shape {
+  list-style: none;
+}
+
+.sidebar .shapes #picker {
+  display: flex;
+  justify-content: center;
+}
+.sidebar #range {
+  display: flex;
+  justify-content: center;
+}
+.sidebar .shapes #size {
+  background-color: #fff;
+}
+.sidebar .buttons {
+  width: fit-content;
+  margin: 30px auto;
+}
+
+.sidebar .buttons button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 16px;
+  padding: 10px 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+.sidebar .buttons button:nth-child(2) {
+  color: #000;
+  background-color: #fff;
+}
+#canvas {
+  background-color: #000;
+  flex: 0.8;
+}
+
+.active {
+  color: #3e90ff;
+}

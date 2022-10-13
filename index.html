@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script src="/Js/script.js" defer></script>
+    <title>Draw App</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <h1>Drawing <span> Board </span></h1>
+      </div>
+
+      <div class="shapes">
+        <h2>Shapes</h2>
+        <ul>
+          <li class="shape option">
+            <i class="fa-regular fa-rectangle"></i>
+            <span>Rectangle</span>
+          </li>
+          <li class="shape option">
+            <i class="fa-regular fa-rectangle"></i>
+            <span>Triangle</span>
+          </li>
+          <li class="shape option">
+            <i class="fa-regular fa-rectangle"></i>
+            <span>Circle</span>
+          </li>
+          <li class="shape option">
+            <i class="fa-regular fa-rectangle"></i>
+            <span>Line</span>
+          </li>
+        </ul>
+      </div>
+      <div class="shapes">
+        <h2>Option</h2>
+        <ul>
+          <li class="shape active">
+            <span id="brush">Brush</span>
+          </li>
+          <li class="shape">
+            <span id="eraser">Eraser</span>
+          </li>
+          <li class="shape" id="range">
+            <input
+              type="range"
+              id="size"
+              name="size"
+              min="1"
+              max="20"
+              step="1"
+              value="4"
+            />
+          </li>
+          <li class="shape">
+            <input type="checkbox" id="fill" />
+            <span>Fill Color</span>
+          </li>
+        </ul>
+      </div>
+      <div class="shapes">
+        <h2>Color</h2>
+        <div id="picker"></div>
+      </div>
+      <div class="buttons">
+        <button id="clear">Clear Board</button>
+        <button id="save">Save as Image</button>
+      </div>
+    </div>
+
+    <canvas id="canvas" width="100vw" height="100vh"></canvas>
+  </body>
+</html>
